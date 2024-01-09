@@ -29,7 +29,7 @@ A simple Arduino project for an automatic watering system. This project uses a s
 
 ## Circuit Diagram
 
-    +---------------------+<br>
+  +---------------------+<br>
   |      Arduino Nano   |<br>
   +---------------------+<br>
             |<br>
