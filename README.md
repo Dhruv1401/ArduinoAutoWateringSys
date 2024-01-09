@@ -29,24 +29,32 @@ A simple Arduino project for an automatic watering system. This project uses a s
 
 ## Circuit Diagram
 
-  +---------------------+<br>
+    +---------------------+<br>
   |      Arduino Nano   |<br>
   +---------------------+<br>
             |<br>
             |<br>
-  +----A4 (SDA)--------- LCD (I2C)  <br>
+  +----Analog Pin ------- Soil Moisture Sensor<br>
   |         |<br>
   |         |<br>
-  +----A5 (SCL)--------- LCD (I2C)<br>
+  +----SDA -------------- LCD (I2C)<br>
   |         |<br>
   |         |<br>
-  +----2 -------------- DS18B20 Temperature Sensor<br>
+  +----SCL -------------- LCD (I2C)<br>
   |         |<br>
   |         |<br>
-  +----7 -------------- Positive (+) lead of Buzzer<br>
+  +----Digital Pin ------ Relay Module<br>
+  |         |<br>
+  |         |<br>
+  +----Water Pump ------- Relay Module<br>
                       |<br>
                       |<br>
-                  GND -------------- Negative (-) lead of Buzzer<br>
+                  Power Supply -------------- Water Pump<br>
+In simpler language: <br>
+Connect the soil moisture sensor to one of the analog pins on the Arduino Nano.<br>
+Connect the LCD with I2C interface to the corresponding pins (SDA and SCL).<br>
+Connect the relay module to a digital pin on the Arduino Nano. This will control the water pump.<br>
+Connect the water pump to the relay module.<br>
 
 
 ## Usage
