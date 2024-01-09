@@ -29,7 +29,25 @@ A simple Arduino project for an automatic watering system. This project uses a s
 
 ## Circuit Diagram
 
-![Circuit Diagram](docs/circuit_diagram.png)
+  +---------------------+<br>
+  |      Arduino Nano   |<br>
+  +---------------------+<br>
+            |<br>
+            |<br>
+  +----A4 (SDA)--------- LCD (I2C)  <br>
+  |         |<br>
+  |         |<br>
+  +----A5 (SCL)--------- LCD (I2C)<br>
+  |         |<br>
+  |         |<br>
+  +----2 -------------- DS18B20 Temperature Sensor<br>
+  |         |<br>
+  |         |<br>
+  +----7 -------------- Positive (+) lead of Buzzer<br>
+                      |<br>
+                      |<br>
+                  GND -------------- Negative (-) lead of Buzzer<br>
+
 
 ## Usage
 
